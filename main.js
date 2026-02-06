@@ -11,15 +11,9 @@ onEvent("convert", "click", function(){
 
 
 function toBinary(num){
-  // reverse
   var total = 0;
   for (var i = 0; i < num.length; i++){
-    if (num[i] == 0){
-      total += 0;
-    }
-    else {
-      total += num[i] * (Math.pow(2, i));
-    }
+    total += num[i] * (Math.pow(2, i));
   }
   return total;
 }
