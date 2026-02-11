@@ -1,5 +1,3 @@
-// Thx chatgpt for the ascii table :)
-// also dont delete or change this variable ever!!!
 var asciiChart = getColumn("ascii chart", "symbol");
 
 
