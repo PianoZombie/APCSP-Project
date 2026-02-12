@@ -27,7 +27,7 @@ function toBinary(num){
     // If the byte starts with a 0 and is [33, 126] (because that's what numbers correspond to in the ascii)
     // then the function will return an ascii character
     if (num[num.length - 1] == "0" && (total <= 126 && total >= 33)){
-      return asciiChart[total]; // Since ascii chars are already strings they dont need to be converted
+      return asciiChart[total - 33]; // Since ascii chars are already strings they dont need to be converted
     }
     // If a number doesnt meet any of the requirements above while the box is checked
     // just return the total.
